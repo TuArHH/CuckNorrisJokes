@@ -1,0 +1,15 @@
+{
+  "name": "Chuck_Norris_Joke",
+  "version": "1.0.0",
+  "description": "Juck Noris Jokes",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Tugrul Arslan",
+  "license": "ISC",
+  "devDependencies": {
+    "@csstools/normalize.css": "^12.0.0",
+    "bootstrap": "^5.2.3"
+  }
+}

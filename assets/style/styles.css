@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(79, 79, 77);
+  position: relative;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+  text-shadow: 2px 3px #7b1b1b;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div button {
+  background-color: lightblue;
+  color: red;
+  cursor: pointer;
+  padding: 0.35rem;
+  font-size: 1rem;
+  border-radius: 12rem;
+  -webkit-border-radius: 12rem;
+  -moz-border-radius: 12rem;
+  -ms-border-radius: 12rem;
+  -o-border-radius: 12rem;
+  max-height: 4rem;
+  position: fix;
+}
+
+::selection {
+  background-color: #7b1b1b;
+  color: #fff;
+}
+
+div button:focus {
+  border: none;
+  outline: none;
+}
+
+.addNewCard {
+  box-shadow: 10px 10px 5px lightblue;
+}

@@ -57,3 +57,9 @@ div button:focus {
 .addNewCard {
   box-shadow: 10px 10px 5px lightblue;
 }
+
+.gridTemplate {
+  grid-template-columns: minmax(100px, 4fr);
+  position: absolute;
+  bottom: 0;
+}

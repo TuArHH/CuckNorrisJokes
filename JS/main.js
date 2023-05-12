@@ -6,7 +6,7 @@ addEventListener('DOMContentLoaded', () => {
 });
 
 const content__card = document.querySelector('.content__card');
-const body = document.querySelector('body');
+const main = document.querySelector('main');
 
 const btn = document.querySelector('button');
 const div = document.querySelector('div');
@@ -24,7 +24,20 @@ async function getJokes() {
 
 const createElementBookMaker = () => {
   const maxCount = 4;
-  //const gridMatrix = document.createElement('div');
+  const bookmakerList = [];
+
+  content__card.addEventListener('click', () => {
+    const gridMatrix = document.createElement('div');
+    gridMatrix.classList.add('gridTemplate');
+    gridMatrix.textContent = content__card.textContent;
+
+    if (bookmakerList.length < maxCount) {
+      bookmakerList.push(gridMatrix.textContent);
+      console.log(bookmakerList);
+    } else {
+      console.log('Your bookmakerList is full ');
+    }
+  });
 };
 
 const createJoke = () => {
@@ -37,7 +50,7 @@ const createJoke = () => {
 
       content__card.classList.add(`addNewCard`);
 
-      getJokes();
+      content__card.append(getJokes());
     }, 1000);
   });
 };

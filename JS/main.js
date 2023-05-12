@@ -7,6 +7,7 @@ addEventListener('DOMContentLoaded', () => {
 
 const content__card = document.querySelector('.content__card');
 const main = document.querySelector('main');
+const img = document.querySelector('img');
 
 const btn = document.querySelector('button');
 const div = document.querySelector('div');
@@ -48,6 +49,7 @@ const createJoke = () => {
       content__card.style.padding = `${1}rem `;
       div.style.border = `none`;
       content__card.style.fontSize = `${3}rem`;
+      btn.style.fontSize = `${3}rem`;
 
       content__card.classList.add(`addNewCard`);
 

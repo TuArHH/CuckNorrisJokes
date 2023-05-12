@@ -49,6 +49,10 @@ div button {
   color: #fff;
 }
 
+.content__card {
+  font-size: 1.8rem;
+}
+
 div button:focus {
   border: none;
   outline: none;

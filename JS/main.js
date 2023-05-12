@@ -47,6 +47,7 @@ const createJoke = () => {
       content__card.style.backgroundColor = `#842bd1`;
       content__card.style.padding = `${1}rem `;
       div.style.border = `none`;
+      content__card.style.fontSize = `${3}rem`;
 
       content__card.classList.add(`addNewCard`);
 
